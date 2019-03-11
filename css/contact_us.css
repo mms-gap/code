@@ -1,0 +1,40 @@
+
+
+#main_contact{
+	width: 100%;
+	
+}
+
+.bg { 
+    background-image: url("../images/hd_bg_blue_white_circle.jpg");
+	margin-top:-15px;
+	
+}
+
+#text-div{
+	color:black;
+	
+}	
+
+#main_fDiv1 {margin-left:220px;
+}
+
+.form {height:350px;
+		padding-left:100px;
+		color:black;
+}
+
+#main_fDiv2 {margin-left:150px;
+			border-left:solid #99b5e5;
+}
+
+.contact2	{color:black;
+			padding:25px;
+}
+#address_img	{height:250px;
+				width:250px;
+				border:solid #99b5e5;
+}
+
+#contact_icon	{float:left;
+}

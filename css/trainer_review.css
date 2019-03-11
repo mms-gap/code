@@ -1,0 +1,15 @@
+header{
+	background-color: #424242;
+}
+
+
+#headerTrainer{
+	margin-left:40%;
+	width:200px;
+	background-color: #424242;
+	display:block;
+}
+#searchPatient{
+	border-radius: 25px;
+	border: none;
+}

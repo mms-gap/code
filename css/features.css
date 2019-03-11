@@ -1,0 +1,126 @@
+body{
+	overflow-x: hidden;
+}
+/*main*/
+
+/*section1*/
+#circle1{
+	border-radius: 100%;
+	background-color:#1464f6;
+	width:150px;
+	height:150px;
+	margin: 0 auto;
+	padding-top:60px;
+	border: 1px solid;
+	color:black;
+	
+}
+#reviewFeature{
+    width:80%;
+	margin:0px auto;
+}
+
+/*section2*/
+#circle2{
+	border-radius: 100%;
+	background-color:#4dd7fa;
+	width:150px;
+	height:150px;
+	margin: 0 auto;
+	padding-top:60px;
+	border: 1px solid;
+	color:black;
+	
+}
+
+#pravitemassege{
+    width:79%;
+	margin:0px auto;
+	margin-top:-32px;
+}
+
+
+
+/*section3*/
+#circle3{
+	border-radius: 100%;
+	background-color:#fff200;
+	width:150px;
+	height:150px;
+	margin: 0 auto;
+	padding-top:60px;
+	border: 1px solid;
+	color:black;
+	
+}
+
+#Digital-Forum{
+    width:79%;
+	margin:0px auto;
+	margin-top:-15px;
+}
+
+
+
+/*General*/
+.row{
+	width:auto;
+
+}
+
+.bg { 
+    background-image: url("../images/hd_bg_blue_white_circle.jpg");
+	margin-top:-15px;
+}
+
+.text-div{
+	color:black;
+}
+
+.btn-outline{
+	border-color:#1464f6 !important;
+	color:#1464f6;
+	background-color:transparent;
+	margin-bottom:100px;
+}
+.btn-outline:hover{
+	background-color:#1464f6;
+	border-color: #1464f6;
+	color:#ffffff !important;
+}
+
+a {
+	text-decoration: none
+}
+.slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+
+
+

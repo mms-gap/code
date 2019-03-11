@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!----Title---->
+		<title>MMS-GAP</title>
+	<!----Meta---->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!----Style---->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/mms_home_style.css">
+		<link rel="stylesheet" href="css/features.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!----Script---->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+</head>
+<body id="myPage" data-spy="scroll" >
+
+
+<nav class="navbar navbar-fixed-top" id="navbar_home">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-center">
+	   <li><a href="#OurProduct">Our product</a></li>
+        <li><a href="#SignIn" onclick="document.getElementById('signIn1').style.display='block'">Sign in</a></li>
+        <li><a href="#Register" onclick="document.getElementById('register1').style.display='block'">Register</a></li>
+        <li><a href="#Feature">Feature</a></li>
+        <li><a href="#ContactUs">Contact us</a></li>
+        <li><a href="#about">About us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header>
+		<center>
+			<div class="container">
+				<div class="row">
+						<div class="logo">
+							<a href="mms-gapHome.html">
+								<img src="images/mms-gap.png" class="img-responsive" alt="LOGO MMS-GAP" id="header_logo">
+							</a>
+						</div>
+				</div>
+			</div>
+		</center>
+</header>
+<main>
+	<section >
+		<div id="OurProduct" class="container-fluid bg-fluid" style="height:500px;">
+			<div class="row bg-fluid">
+			<div class="col-md-4"></div>
+				 <div class="col-md-5 slideanim" id="video">
+					<div class="embed-responsive embed-responsive-16by9" >
+						<video controls class="embed-responsive-item" src="images/meetJosh.mp4" allowfullscreen></video>
+                     </div>
+				</div>
+			</div>
+			
+		</div>
+	</section>
+	<section>
+	<div class="row bg" id="Feature">
+			<div class="col-md-4 text-center slideanim" id="main_fDiv1">
+				<div id="circle1">
+					<img src="images/5star.png" class="img-responsive bounce animated bounceIn" alt="reviewFeature" id="reviewFeature"><br><br><br>
+				</div>
+				<div class="text-div">
+					<h5><b>Review your professional</h5>
+					<h5><b>Watch why you need this feature</h5>
+					<button type="button" class="btn btn-outline"><b>Watch Now<a href="#" ></a></button>
+				</div>
+              </div>
+			  <div class="col-md-4 text-center slideanim" id="main_fDiv2">
+				<div id="circle2">
+					<img src="images/Digital-Message.png" class="img-responsive" alt="pravitemassege" id="pravitemassege">
+				</div>
+				<div class="text-div">
+					<h5><b>Send pravite massege</h5>
+					<h5><b>Watch why you need this feature</h5>
+					<button type="button" class="btn btn-outline"><b>Watch Now<a href="#" ></a></button>
+				</div>
+              </div>
+			  <div class="col-md-4 text-center slideanim" id="main_fDiv3">
+				<div id="circle3">
+					<img src="images/Digital-Forum-Logo.png" class="img-responsive" alt="Digital-Forum" id="Digital-Forum"><br><br><br>
+				</div>
+				<div class="text-div">
+					<h5><b>Review your professional</h5>
+					<h5><b>Watch why you need this feature</h5>
+					<button type="button" class="btn btn-outline"><b>Watch Now<a href="#" ></a></button>
+				</div>
+              </div>
+		
+			
+		</div>
+		</section>
+		<section>
+		<div id="signIn1" class="modal">
+			<form class="modal-content animate" action="php/signIn.php" method="post">
+			<div class="container-fluid">
+			<span onclick="document.getElementById('signIn1').style.display='none'" class="close" title="Close Modal">&times;</span>
+				<label for="userName"><b>Username</b></label>
+				<input type="text" class="sign_input" placeholder="Enter Username" name="userName" required>
+
+				<label for="Password"><b>Password</b></label>
+				<input type="password" class="sign_input" placeholder="Enter Password" name="Password" required>
+        
+				<button type="submit" class="btn btn-primary btn-lg btn-block">Login</button>
+				<label><input type="checkbox" checked="checked" name="remember" > Remember me</label>
+			</div>
+
+			<div class="container-fluid" style="background-color:#f1f1f1">
+				<button type="button" onclick="document.getElementById('signIn1').style.display='none'" class="btn btn-danger">Cancel</button>
+				<span class="password" id="forgot">Forgot <a href="#">password?</a></span>
+			</div>
+			</form>
+		</div>
+	</section>
+	<section>
+		<div id="register1" class="modal" >
+			<form class="modal-content animate" action="php/register_details_local.php" method="post">
+			<div class="container-fluid">
+			<span onclick="document.getElementById('register1').style.display='none'" class="close" title="Close Modal">&times;</span>
+				<label for="firstName"><b>First Name</b></label>
+				<input type="text" id="firstname" class="sign_input" placeholder="Enter First Name" name="firstName"  required>
+
+				<label for="lasttName"><b>Last Name</b></label>
+				<input type="text" id="lasttname" class="sign_input" placeholder="Enter Last Name" name="lasttName" required>
+				
+				<label for="userName"><b>Username</b></label>
+				<input type="text" class="sign_input" placeholder="Enter Username" name="userName" required>
+
+				<label for="Password"><b>Password</b></label>
+				<input type="password" class="sign_input" placeholder="Enter Password" name="Password" required>
+				
+				<label for="ID"><b>ID Number</b></label>
+				<input type="number" class="sign_input" placeholder="Enter ID" name="ID" required>
+				
+				<label for="Email"><b>Email</b></label>
+				<input type="Email" class="sign_input" placeholder="Enter Email" name="Email" required>
+				
+				<label for="UserType"><b>User Type</b></label>
+				<select class="sign_input" name="UserType">
+					<option value="Patient">Patient</option>
+					<option value="Doctor">Doctor</option>
+					<option value="Trainer">Trainer</option>
+					<option value="Nutrition">Nutrition</option>
+				</select>
+				
+				<label for="Age"><b>Age</b></label>
+				<input type="number" class="sign_input" placeholder="Enter Age" name="Age">
+				
+				<label for="State"><b>State</b></label>
+				<input type="text" class="sign_input" placeholder="Enter State" name="State">
+				
+				<label for="Address"><b>Address</b></label>
+				<input type="text" class="sign_input" placeholder="Enter Address" name="Address">
+        
+				<button type="submit" class="btn btn-primary btn-lg btn-block">Rgister</button>
+				<label><input type="checkbox" checked="checked" name="remember" > Remember me</label>
+			</div>
+
+			<div class="container-fluid" style="background-color:#f1f1f1">
+				<button type="button" onclick="document.getElementById('register1').style.display='none'" class="btn btn-danger">Cancel</button>
+			</div>
+			</form>
+		</div>
+	</section>
+	<section>
+		<div class="container slideanim" id="ContactUs">
+			<div style="text-align:center">
+				<h2>Contact Us</h2>
+			</div>
+			<div class="row">
+				<div class="col-md-8">
+					<div id="map" style="width:100%;height:400px"></div>
+			</div>
+			<div class="row">
+			<div class="col-md-3">
+				<form action="#">
+					<label for="fname">Full Name</label>
+						<input type="text" id="fname" name="fname" class="sign_input" placeholder="Your name">
+					<label for="email">Email</label>
+						<input type="email" id="email" name="email" class="sign_input" placeholder="Your Email">
+					<label for="subject">Subject</label>
+						<textarea id="subject" name="subject" placeholder="Write something"  class="sign_input"style="height:170px"></textarea>
+					<button type="submit" class="btn btn-outline"><b>Submit<a href="#" ></a></button>
+				</form>
+			</div>
+			</div>
+		</div>
+  </section>
+  <section id="about">
+				<div class="bg ">
+					<div class="about_us_text row container-fluid text-center slideanim">
+						<h2>About the company</h2>
+						<h4>Founded in 2008, MMS-GAP is a platform to manage the process of the patient on his way to get healthier. <br>
+							Our goal is to help people feel better, control their program and to get a valuable feedback from the professionals.</h4>
+			
+					</div>
+				<div class="container-fluid text-center row" >
+					<h2>OUR TEAM</h2>
+					<p>Meet the team:</p>
+
+				<div class="row slideanim"><br>
+					<div class="col-sm-4 text-center">
+						<a href="https://www.linkedin.com/in/tomer-raitz-13b64911b/" target="_blank">
+							<img src="images/tomer.jpg" alt="Boss" style="width:150px"  class="w3-circle w3-hover-opacity"></a>
+						<h3>Tomer Raitz</h3>
+						<p>Founder & CEO</p>
+					</div>
+
+					<div class="col-sm-4 text-center">
+						<a href="https://www.linkedin.com/in/aviv-berger-b1376013b/" target="_blank">
+							<img src="images/aviv.jpg" alt="Boss" style="width:150px"  class="w3-circle w3-hover-opacity"></a>
+						<h3>Aviv Berger</h3>
+						<p>Founder & CTO</p>
+					</div>
+
+					<div class="col-sm-4 text-center">
+						<a href="https://www.linkedin.com/in/amit-levy-731602137/" target="_blank">
+							<img src="images/amit.jpg" alt="Boss" style="width:150px"  class="w3-circle w3-hover-opacity"></a>
+						<h3>Amit Levy</h3>
+						<p>Partnere & CISO</p>
+					</div>
+
+
+				</div>
+				</div>
+	
+		</div>
+		</section>
+	
+</main>
+<footer class="navbar-default navbar-bottom" id="footer_main">
+			<div class="container-fluid">
+				<div class="col-md-4 text-center">
+                      <img src="images/mms-gap.png" class="img-responsive" alt="LOGO MMS-GAP" id="footer_logo">
+					  <p class="text-md-left grey-text">© Copyright: <a href="mms-gap.html"><strong> MMS-GAP</strong></a></p>
+                  </div>
+				  <div class="col-md-2 text-center">
+                      <h5 class="text-uppercase mb-4 mt-3 font-weight-bold">Category</h5>
+                      <p>Product</p>
+					  <p>About Us</p>
+					  <p>Downloads</p>
+					  <p>Team</p>
+                  </div>
+				  
+				  <div class="col-md-2 text-center">
+                      <h5 class="text-uppercase mb-4 mt-3 font-weight-bold">Management</h5>
+                      <p>Resources</p>
+					  <p>Institutions</p>
+					  <p>Locations</p>
+					  <p>Contact</p>
+                  </div>
+				  <div class="col-md-2 text-center">
+                      <p><a href="#" class="btn btn-primary">Back to top</a></p><br>
+					  <a href="#" class="btn btn-primary" onclick="document.getElementById('signIn1').style.display='block'">&ensp;&ensp;sign in&ensp;&ensp;</a>
+				  </div>
+			</div>
+</footer>
+
+
+
+
+
+<script>
+
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 200) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+var modal = document.getElementById('signIn1');
+var modal = document.getElementById('register1');
+
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+// Initialize google maps
+function myMap() {
+  var myCenter = new google.maps.LatLng(32.074610, 34.79159);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 12};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false&callback=myMap"></script>
+
+
+</body>
+</html>
